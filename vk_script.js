@@ -3,9 +3,9 @@ var https = require('https');
 var iconv = require('iconv-lite');
 const readline = require('readline-sync');
 
-var my_id = parseInt(readline.question("Enter your ID: "));
+var my_id = '185645054';
 
-var COOKIE = readline.question("Enter your cookies: ");
+var COOKIE = 'remixlang=0; remixstid=174780143_8f08d9b6cecc032d5b; remixflash=0.0.0; remixscreen_depth=24; remixdt=0; remixttpid=da52df1d140a2a76ab14e8be1b9adea7d54a1e6835; remixmdevice=1366/768/1/!!-!!!!; remixgp=55e4345b0f6326e4e5d01b97afeffe5c; remixseenads=0; remixrefkey=d1fb7610a21ed037de; remixsid=9b8c6fe71fe2345400123a0b9b6adf2e1cb12f7e4e844a6cf1ffe; tmr_detect=0%7C1524492713021';
 var USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36';
 
 function httpsRequest(params, postData) {
