@@ -165,6 +165,7 @@ async function buildPlaylist() {
         'offset': 0
     }
     let res = await audio_api(pd);
+    console.log(res);
     res = prepare(res);
     list = res.list.map(x => {
         return {
