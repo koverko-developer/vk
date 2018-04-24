@@ -140,6 +140,7 @@ async function audio_api(payload, callback) {
         }
     };
     let result = await httpsRequest(post_options, post_data);
+    console.log(result);
     return result;
 }
 
